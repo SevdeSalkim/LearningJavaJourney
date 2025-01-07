@@ -22,6 +22,6 @@ public class IfKeywords {
             System.out.println("Your final score was: " + finalScore);
         }
 
-
     }
+
 }
