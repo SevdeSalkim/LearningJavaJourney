@@ -38,7 +38,7 @@ public class Main {
     }
 
     public static  String getQuarter(String month){
-        switch (month){
+        /*switch (month){
             case "January":
             case "February":
             case "March":
@@ -57,5 +57,14 @@ public class Main {
                 return "4th";
         }
         return "bad";
+    }*/
+
+        return switch (month) {
+            case "January", "February", "March" -> "1st";
+            case "April", "May", "June" -> "2nd";
+            case "July", "Augst", "September" -> "3rd";
+            case "October", "November", "December" -> "4th";
+            default -> "bad";
+        };
     }
 }
